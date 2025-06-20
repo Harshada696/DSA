@@ -14,6 +14,7 @@ class Bubble{
                 }
             }
             if(flag==0){
+                
                 break;
             }
         }
