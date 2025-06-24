@@ -1,29 +1,35 @@
-class Practice{//selection sort in descending order 
-    public static void SelectionSort(int arr[]){
+class Practice{
+    public static void max(int arr[]){
+        int max=arr[0];
         for(int i=0;i<arr.length;i++){
-            int min=i;
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[j]<arr[min]){
-                    min=j;
-                    
-                }
+            if(max<arr[i]){
+                max=arr[i];
             }
-            int temp=arr[i];
-                    arr[i]=arr[min];
-                    arr[min]=temp;
         }
+        System.out.println("max :"+max);
     }
-    public static void print(int arr[]){
-        for(int i=arr.length-1;i>=0;i--){//here we start from last element to 1st (descending order)
-            System.out.println(arr[i]);
+    public static void min(int arr[]){
+         int min=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(min>arr[i]){
+                min=arr[i];
+            }
         }
-    }
-
-    public static void main(String[] args){
-        int arr[]={1,2,3,6,5,4};
-        SelectionSort(arr);
-        print(arr);
+        System.out.println("min :"+min);
 
 
     }
-}
+    
+   
+public static void main(String[] args){
+    int arr[] = {1, 3, 5, 2};
+
+    max(arr);
+    min(arr);
+ 
+    
+
+
+
+
+}}
