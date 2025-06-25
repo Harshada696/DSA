@@ -1,31 +1,14 @@
 class Practice{
-    public static void max(int arr[]){
-        int max=arr[0];
-        for(int i=0;i<arr.length;i++){
-            if(max<arr[i]){
-                max=arr[i];
+    public static void main(String[] args){
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
             }
+            System.out.println();
         }
-        System.out.println("max :"+max);
-    }
-    public static void min(int arr[]){
-         int min=arr[0];
-        for(int i=0;i<arr.length;i++){
-            if(min>arr[i]){
-                min=arr[i];
-            }
-        }
-        System.out.println("min :"+min);
 
-
-    }
     
-   
-public static void main(String[] args){
-    int arr[] = {1, 3, 5, 2};
-
-    max(arr);
-    min(arr);
  
     
 
