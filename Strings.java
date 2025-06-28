@@ -1,3 +1,4 @@
+import java.util.*;
 class Strings {
     /*
     Important String Functions:
@@ -64,11 +65,72 @@ class Strings {
         }
         System.out.println(); // for newline
     }
+    public static void check(String name1, String name2){
+        if(name1.compareTo(name2)==0){
+            System.out.println("Two strings are equal");
+        }
+        else{
+            System.out.println("Two Strings are not equal");
+        }
+
+        
+    }
+    public static void palindrome(String pal){
+           String reversed="";
+        for(int i=pal.length()-1;i>=0;i--){
+             reversed+=pal.charAt(i);
+            
+
+        }
+        if(reversed.equalsIgnoreCase(pal) ){
+            System.out.println("String is palindrome");
+        }
+        else{
+            System.out.println("String is not palindrome");
+        }
+
+    }
+    public static void pass_check(){// This functions checks password (mostly use in Login System)
+        Scanner sc=new Scanner(System.in);
+        String pass;
+        int attempt=0;
+        int maxattempt=3;
+
+        do{
+        System.out.println("Enter your password");
+         pass=sc.nextLine();
+
+        
+        if(pass.equals("harshu")){
+            System.out.println("login Succesfully");
+            break;
+        }
+        else{
+            
+            attempt++;
+            if(attempt<maxattempt){
+                System.out.println("Try Again");
+                
+            }
+            else{
+                System.out.println("sorry ! ,no more attmepts left ");
+                break;
+            }
+        }
+        }while(true);
+
+    }
 
     public static void main(String[] args) {
         String name = "harshu";
+        String name1="name";
+        String name2="name";
+        String pal="Madam";
         print(name);
         reverse(name);
         fun(name);
+        check(name1,name2);
+        palindrome(pal);
+        pass_check();
     }
 }
