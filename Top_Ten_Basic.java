@@ -138,6 +138,19 @@ class Top_Ten_Basic{
         }
 
     }
+    public static void sum_even(){
+        int sum=0;
+        int num=5;
+        
+          
+            for(int i=1;i<=num;i++){
+                  if(i%2==0){
+                   sum+=i;
+            }
+        }
+        System.out.println("sum of Even numbers:"+sum);
+
+    }
     public static void main (String args[]){
         fibonacci();
         fact();
@@ -150,8 +163,30 @@ class Top_Ten_Basic{
         palindrone();
         armstrong();
         double name=12.12;
-        double size=String.valueOf(name).replace(".","").length();//calcuate length of digit 
+        double size=String.valueOf(name).replace(".","").length();//calcuate length 
         System.out.println(size);
-
+        sum_even();
+        //rombus print 
+        int nr=5;
+        for(int i=1;i<nr;i++){
+            for(int j=1;j<nr-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<nr;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        for(int i=nr;i>=1;i--){
+            for(int j=1;j<nr-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<nr;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
+    
 }

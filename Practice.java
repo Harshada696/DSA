@@ -19,6 +19,38 @@ class Practice{
 
       
     } 
+    public static void printp(){
+       int nu=5;
+      for(int i=1;i<=nu;i++){
+        for(int j=1;j<=i;j++){
+          System.out.print("*");
+        }
+        for(int j=1;j<=2*(nu-i);j++){
+          System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++){
+          System.out.print("*");
+        }
+        System.out.println();
+
+
+      }
+        for(int i=nu-1;i>=1;i--){
+        for(int j=1;j<=i;j++){
+          System.out.print("*");
+        }
+        for(int j=1;j<=2*(nu-i);j++){
+          System.out.print(" ");
+        }
+        for(int j=1;j<=i;j++){
+          System.out.print("*");
+        }
+        System.out.println();
+
+
+      }
+
+    }
     public static void main(String[] args){
         
       //factorial 
@@ -64,17 +96,24 @@ class Practice{
 
 
       }
+      printp();
+      harshu();
+      }
+      public static void harshu(){
+        int n=5;
+        for(int i=1;i<=n;i++){
+          for(int j=1;j<=i;j++){
+            System.out.print(i);
+          }
+          System.out.println();
+        }
+
+
+      }
+      
+syso
 
 
 
-    
 
-
-    
- 
-    
-
-
-
-
-}}
+}
