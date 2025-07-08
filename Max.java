@@ -1,8 +1,12 @@
 class Max{
     public static void main(String[]args ){
-        char arr[]={'h','a','r','s','h','a','d','a'};
-        for(int i=arr.length-1;i>=0;i--){
-            System.out.print(arr[i]+" ");
-        }
+        String name="harshada";
+        String reverse="";
+        for(int i=name.length()-1;i>=0;i--){
+             reverse+=name.charAt(i);
+
+         }
+         System.out.print(reverse);
+     
     }
 }
