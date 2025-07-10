@@ -1,5 +1,20 @@
 class Practice{
     public static void practice(){
+      int a=5;
+      int first=0;
+      int second=1;
+      int third=first+second;
+      
+      for(int i=3;i<a;i++){
+        first=second;
+        second=third;
+        System.out.println(third);
+      }
+
+
+
+
+
       //contribute your logical code 
       //reverse array elements;
       int arr[]={1,2,3,4,5};
