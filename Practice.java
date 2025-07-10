@@ -1,5 +1,6 @@
 class Practice{
     public static void practice(){
+      //febonasis series
       int a=5;
       int first=0;
       int second=1;
