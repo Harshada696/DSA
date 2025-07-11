@@ -1,5 +1,6 @@
 class Number_sum{
     public static void main(String []args){
+
         //reverse a number 
         int rev_a=123;
         int rev=0;
@@ -35,5 +36,14 @@ class Number_sum{
         else{
             System.out.println("number is not palindrome");
         }
-        
+       //calcualte lenth of arr 
+       int arr[]={1,2,3,4,5};
+       int count=0;
+       int len=arr.length;
+       System.out.println("length of array using fun "+ len);
+       for(int i=0;i<arr.length;i++){
+       // count++;
+
+       }  
+       System.out.println("count is :"+ count);      
 }}
