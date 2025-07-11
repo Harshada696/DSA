@@ -1,6 +1,40 @@
 class Number_sum{
-    public static void main(String []args){
 
+     public static void rev(){
+        int num=89;
+        int sum=0;
+        while(num !=0){
+            int digit=num%10;
+            sum+=digit;
+            num=num/10;
+        }
+        System.out.println("sum of number is :"+ sum);
+
+     }
+     public static void star(){
+        for(int i=0;i<5;i++){
+            for(int j=i;j<5;j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+     }
+     public static void bit_check(){
+        int num=2;
+        if((num & 1) ==0){
+            System.out.println("it is even");
+        }
+        else{
+            System.out.println("it is odd");
+        }
+
+
+     }
+    public static void main(String []args){
+        bit_check();
+
+        rev();
+        star();
         //reverse a number 
         int rev_a=123;
         int rev=0;
@@ -45,5 +79,6 @@ class Number_sum{
        // count++;
 
        }  
-       System.out.println("count is :"+ count);      
+       System.out.println("count is :"+ count);    
+     
 }}
