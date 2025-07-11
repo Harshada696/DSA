@@ -1,5 +1,8 @@
 class Practice{
     public static void practice(){
+      //sum of digit of given number 
+      int a_n=345;
+      System.out.println(a_n);
       //febonasis series
       int a=5;
       int first=0;
@@ -10,7 +13,7 @@ class Practice{
         first=second;
         second=third;
         System.out.println(third);
-      }
+      } 
 
 
 
