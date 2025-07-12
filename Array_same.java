@@ -1,4 +1,4 @@
-class Array_same{
+class Array_same{//check wether two aarrays contain same elements
     public static boolean check(){
         int arr[]={1,2,3,4,6};
         int arr1[]={1,2,3,4,5};

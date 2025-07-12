@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class Solution1 {
     public static long calc(int N, int M, List<Integer> A, List<Integer> B) {
         int[] mustInclude = new int[M + 2]; // Tracks which positions must be covered
         for (int i = 0; i < N; i++) {
