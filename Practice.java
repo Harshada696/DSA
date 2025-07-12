@@ -1,5 +1,31 @@
 class Practice{
+    public static void prime(){
+      int num=2;
+      boolean check=false;
+      if(num<=1){
+        System.out.println("not prime ");
+      }
+      
+        for(int i=2;i<=Math.sqrt(num);i++){
+          if(num % i == 0){
+            check=true;
+            break;
+          }
+
+        }
+        if(check){
+          System.out.println("it is prime ");
+        }
+        else{
+          System.out.println("it is not prime ");
+        }
+      
+      
+
+    }
+
     public static void practice(){
+      prime();
       //sum of digit of given number 
       int a_n=345;
       System.out.println(a_n);
