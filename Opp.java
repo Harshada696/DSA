@@ -1,6 +1,8 @@
 // Main class
 public class Opp extends Student {
     public static void main(String[] args) {
+        Constructor c=new Constructor("name",1234);
+        c.print();
         Prasad_data ps =new Prasad_data();
         ps.name="prasad";
         ps.type="polite boy";
@@ -58,5 +60,19 @@ class Prasad_data{
         System.out.println("name is " + name + "roll no is :" + roll_no +" his type :" +type);
 
     }
+
+}
+class Constructor{
+    int number=12;
+    String name="Harshada";
+     Constructor(String name , int number){
+        this.number=number;
+        this.name=name;
+
+     }
+     public void print(){
+        System.out.println(name);
+        System.out.println(number);
+     }
 
 }
