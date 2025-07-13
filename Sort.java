@@ -46,6 +46,10 @@ class Sort{
         Scanner sc=new Scanner(System.in);
         int size;
         do{
+            if(size ==0){
+                System.out.println("Exiting program..");
+                break;
+            }
         System.out.println("enter size of array :");
          size=sc.nextInt();
         int arr[]=new int[size];
