@@ -1,6 +1,6 @@
 import java.util.*;
 class Sort{
-    public static void sort(int size,int arr[]){
+    public static void sort(int size,int arr[]){//efficinet sort (bubble sort)
         int swap=0;
         for(int i=0;i<size-1;i++){
             for(int j=0;j<size-1-i;j++){
