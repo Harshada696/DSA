@@ -11,11 +11,28 @@ class Sort_search{
             arr[i]=sc.nextInt();
             
         }
-        System.out.println("arry elelemt:");
+        //search (bubble sort)
+        for(int h=0;h<size-1;h++){
+            for(int p=0;p<size-h-1;p++){
+                if(arr[p]>arr[p+1]){
+                    int temp=arr[p];
+                    arr[p]=arr[p+1];
+                    arr[p+1]=temp;
+                }
+            }
+
+        }
+
+        System.out.print(" sorted arry elelemt:");
           for(int i=0;i<size;i++){
-          System.out.print(arr[i]);
+          System.out.println(arr[i]);
             
         }
+        //smallest element 
+        System.out.println("smallest element of array :"+arr[0]);
+        //Largest number of array;
+        System.out.println("largest element of array :"+arr[size-1]);
+
 
 
     }
