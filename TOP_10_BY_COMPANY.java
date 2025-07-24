@@ -71,8 +71,8 @@ return true;
       int reverse=0;
       while(num !=0){
         int digit=num%10;
-        reverse=num*10+digit;
-        num/=num;
+        reverse=reverse*10+digit;
+        num=num/10;
       }
       if(original==reverse){
         System.out.println("number is palindrome");
@@ -132,6 +132,7 @@ return true;
      //find second largest;
 
         public static void main(String []args){
+            pal_num();
             int fact=5;
             int prime=31;
             String str="harshu";
@@ -150,7 +151,7 @@ return true;
            max();
            fre();
            sort();
-           pal_num();
+           
 
 
         }
