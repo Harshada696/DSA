@@ -45,7 +45,7 @@ return true;
 
 
      }
-     //palindrome
+     //palindrome String 
      public static void pal(){
         String str="harshu";
         String original=str;
@@ -63,6 +63,25 @@ return true;
                     System.out.println("string is not palindrome");
                   }
 
+     }
+     //palindrome number 
+     public static void pal_num(){
+      int num=111;
+      int original=num;
+      int reverse=0;
+      while(num !=0){
+        int digit=num%10;
+        reverse=num*10+digit;
+        num/=num;
+      }
+      if(original==reverse){
+        System.out.println("number is palindrome");
+
+      }
+      else{
+        System.out.println("number is not palindrome");
+      }
+      
      }
      //largest number of array
      public static void max(){
@@ -91,6 +110,7 @@ return true;
         }
      }
      //armstrong;
+     
      //sort arry;
      public static void sort(){
       int arr[]={3,4,5,2,1,1};
@@ -130,6 +150,7 @@ return true;
            max();
            fre();
            sort();
+           pal_num();
 
 
         }
