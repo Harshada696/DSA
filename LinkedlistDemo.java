@@ -9,6 +9,8 @@ class LinkedListDemo{
         list.add(4);
         System.out.println(list.remove());//this will remove the head of the list :1
             System.out.println(list);
+            list.addFirst(1);
+            System.out.println("new list:"+list);
 
     }
 }
