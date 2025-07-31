@@ -1,3 +1,4 @@
+//stack and queue (revision)
 import java.util.*;
 class Colelction_Pract{
     public static void main(String [] args){
