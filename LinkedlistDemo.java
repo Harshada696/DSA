@@ -11,6 +11,8 @@ class LinkedListDemo{
             System.out.println(list);
             list.addFirst(1);
             System.out.println("new list:"+list);
+            list.addFirst(0);
+            System.out.println("add to first:"+list);
 
     }
 }
