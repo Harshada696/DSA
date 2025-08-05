@@ -1,5 +1,6 @@
 import java.util.*;
 class HashMap_Demo{
+    
     public static void main(String [] args){
         HashMap <String , Integer> map=new HashMap<>();
         map.put("harshu",8042);
