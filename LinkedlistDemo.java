@@ -27,14 +27,19 @@ class LinkedListDemo{
              System.out.println("list elements :"+list.get(2));//here we underatand that indexing of linked list start from 0(print element at last)
              System.out.println("list eleemnts :"+list);
              System.out.println("size of element :"+list.size());
-             for(int i=list.size()-1;i>0;i--){//reverse linkedlist
-                System.out.println("reverse lis elemetn :"+list.get(i));
-             }
-             Collections.reverse(list);//reverse list by using pre-defined method 
+            // for(int i=list.size()-1;i>0;i--){//reverse linkedlist
+              //  System.out.println("reverse lis elemetn :"+list.get(i));
+          //   }
+             //Collections.reverse(list);//reverse list by using pre-defined method 
             System.out.println("Reversed list: " + list);
             //convert to array 
-            Object[] array = list.toArray();
-            System.out.println("Array: " + Arrays.toString(array));
+            //Object[] array = list.toArray();
+            //System.out.println("Array: " + Arrays.toString(array));
+            Object [] array=list.toArray();
+            System.out.println("array of list is :"+ Arrays.toString(array));
+            for(int j=0;j<array.length;j++){
+                System.out.println("array elemetns are :"+array[j]);
+            }
 
 
 
