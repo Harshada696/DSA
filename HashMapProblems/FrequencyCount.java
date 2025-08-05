@@ -1,4 +1,5 @@
 import java.util.*;
+//count frequency of elements 
 class FrequencyCount{
     public static void main (String [] args){
         String name[]={"harshu","harshu","khushi"};
