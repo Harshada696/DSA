@@ -9,7 +9,7 @@ public static void main(String args[]){
 
     }
     int missing =ex_sum-sum;
-    System.out.println("missing number :"+ missing);
+    System.out.println("missing number :"+ missing);//printing missing values 
 
 }
 }
