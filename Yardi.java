@@ -30,6 +30,14 @@ public static int larg(int arr[]){
 
 
 }
+public static void n_pal(){
+    int num=2222;
+    int reverse=0;
+    while(num>0){
+        num
+    }
+
+}
 
     public static void main(String [] args){
         /*String name="madam";

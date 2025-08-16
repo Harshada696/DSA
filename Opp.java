@@ -18,6 +18,7 @@ public class Opp extends Student {
         // Object of Student_info
         Student_info st = new Student_info();
         st.displayInfo();
+
     }
 }
 
@@ -28,7 +29,7 @@ class Student_info {
     double marks = 90.60;
 
     // Method to print student info
-    public void displayInfo() {
+    public  void displayInfo() {
         System.out.println("Name: " + name);
         System.out.println("Roll No: " + roll_no);
         System.out.println("Marks: " + marks);
